@@ -1,0 +1,168 @@
+@import "~font-awesome/css/font-awesome.css";
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.trans{
+	transition:.836s;
+}
+
+.task-list{
+	background:#efefef;
+	margin-top:20px;
+}
+
+ul li{
+	list-style:none;
+}
+
+.task-list ul{	
+	padding:0px;
+	margin:0px;	
+}
+
+#dt-list ul.nav li{
+	cursor:pointer;
+}
+
+.task-list ul li.Completed span{
+	 text-decoration: line-through;
+}
+
+.task-list ul li.Complete span .fa.fa-check-square{
+	color:#aaa;
+}
+
+.task-list ul li span{
+	padding:4px;
+	background:#dedede;
+	display:inline-block;
+}
+
+.task-list ul li span .fa{
+	margin-left:2%;
+	margin-right:2%;
+	cursor:pointer;
+}
+
+.task-list ul li span.li-in1 {
+	width:30%;
+	margin-left:.5%;
+	margin-right:.5%;
+}
+
+.task-list ul li span.li-in2 {
+	width:57%;
+	margin-left:.5%;
+	margin-right:.5%;
+}
+
+.task-list ul li span.li-in3 {
+	width:10%;
+	margin-left:.5%;
+	margin-right:.5%;
+	margin-bottom: .5%;
+}
+
+.task-list #btn-update{
+	display:none;
+}
+
+.btn.go-back{
+	display:block;
+	width:120px;
+	margin-bottom:12px;
+}
+
+#dt-list{
+	display:none;
+	clear:both;
+}
+
+#dt-list .side{
+	width:30%;
+	padding:0px;
+	float:left;
+}
+
+#dt-list .side li{
+	padding:6px;
+	margin-bottom:4px;
+	background:#efefef;
+	width:100%;
+}
+
+#dt-list #tsk-details{
+	width:68%;
+	margin-left:2%;
+	background:#cfcfcf;
+	float:right;
+	padding:1%;
+	min-height:150px;
+}
+
+#dt-list h4.stt{
+	background: #eee;
+    border-radius: 4px;
+    width: 225px;
+    padding: 6px;
+}
+
+@media screen and (max-width: 600px){
+	body{
+		font-size:.9rem !important;
+	}
+	
+	h1{
+		font-size:1.6rem!important;
+	}
+	
+	h4{
+		font-size:1.1rem!important;
+	}
+	
+	#dt-list h4.stt{
+		width: 98%!important;
+	}
+	
+	.task-list ul li span.li-in1{
+		width:38%;
+	}
+	.task-list ul li span.li-in2{
+		width:60%;
+	}
+	
+	.task-list ul li span.li-in3{
+		float:none;
+		width:99%;
+		margin-top:5px;
+	}
+	button, input, optgroup, select, textarea{
+		max-width:100%;
+	}
+	#root .w-75{
+		width:100% !important;
+	}
+	#root .p-4{
+		padding-left:0 !important;
+		padding-right:0 !important;
+	}
+} 
+
+
+
+
+
+
+
+
